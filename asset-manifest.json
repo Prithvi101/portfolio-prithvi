@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio-prithvi/static/css/main.e9b0b5f3.css",
+    "main.js": "/portfolio-prithvi/static/js/main.95e3fa55.js",
+    "static/js/787.0b983acc.chunk.js": "/portfolio-prithvi/static/js/787.0b983acc.chunk.js",
+    "static/media/about.png": "/portfolio-prithvi/static/media/about.3d10d209bb7e7576e388.png",
+    "static/media/amazon.png": "/portfolio-prithvi/static/media/amazon.94b32914bfa8407baa0d.png",
+    "static/media/home-main.png": "/portfolio-prithvi/static/media/home-main.48edc07724cb4890731f.png",
+    "static/media/home-bg.jpg": "/portfolio-prithvi/static/media/home-bg.21512b8eb69501405c08.jpg",
+    "static/media/slack.png": "/portfolio-prithvi/static/media/slack.b137fa51baafc01c8539.png",
+    "static/media/cv_prithvi_updated.pdf": "/portfolio-prithvi/static/media/cv_prithvi_updated.4c9a06d4b6edc0aa7e54.pdf",
+    "static/media/keeper.png": "/portfolio-prithvi/static/media/keeper.35ee78f2b9be8dc16ae1.png",
+    "static/media/avatar.png": "/portfolio-prithvi/static/media/avatar.e5117e8e0cea57c9a92f.png",
+    "static/media/pre.svg": "/portfolio-prithvi/static/media/pre.d41fbaf29fa7aa73cea7.svg",
+    "static/media/logo.svg": "/portfolio-prithvi/static/media/logo.b69fe539459daa1789e79b264cc41fff.svg",
+    "index.html": "/portfolio-prithvi/index.html",
+    "main.e9b0b5f3.css.map": "/portfolio-prithvi/static/css/main.e9b0b5f3.css.map",
+    "main.95e3fa55.js.map": "/portfolio-prithvi/static/js/main.95e3fa55.js.map",
+    "787.0b983acc.chunk.js.map": "/portfolio-prithvi/static/js/787.0b983acc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9b0b5f3.css",
+    "static/js/main.95e3fa55.js"
+  ]
+}
