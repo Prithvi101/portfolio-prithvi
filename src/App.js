@@ -19,7 +19,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
-
+  const Homepage = "http://Prithvi101.github.io/portfolio-prithvi/"
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
