@@ -1,16 +1,8 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-import {
-  motion,
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Lottie from "react-lottie";
 import animationData from "../space-man.json";
-import Image from "next/image";
-import nextjs from "../../public/Assets/nextjs_logo.svg";
-import reactnative from "../../public/Assets/react-native-1.svg";
 
 type IntroProps = {
   animate: boolean;
@@ -37,7 +29,7 @@ const Intro: React.FC<IntroProps> = ({ animate }) => {
         initial={{ opacity: 0, translateY: "20vh" }}
         animate={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        style={{ scale: scale }}
+        style={{ scale: animate ? scale : 1 }}
         className="text-[6rem] font-bold text-center select-text flex flex-col gap-2 justify-between  items-center mx-auto my-auto"
       >
         <div className="flex justify-center items-end ">

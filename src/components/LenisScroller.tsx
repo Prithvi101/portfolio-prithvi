@@ -7,9 +7,11 @@ export default function LenisScroller() {
   useEffect(() => {
     if (typeof window == "undefined") return;
     const lenisScroll = new Lenis({
-      lerp: 0,
       //wheelMultiplier: 0.8
       wheelMultiplier: 1.3,
+      smoothWheel: true,
+      autoResize: true,
+      duration: 2,
     });
 
     function raf(time: any) {

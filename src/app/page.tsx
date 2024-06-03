@@ -1,6 +1,6 @@
 "use client";
 import Intro from "@/components/widgets/Intro";
-import { useInView, useScroll } from "framer-motion";
+import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 
@@ -8,6 +8,7 @@ import ExperienceCard from "@/components/card/ExperienceCard";
 import { experience1, experience2, experience3 } from "@/components/Experience";
 import Particles from "@/components/things/Particles";
 import MySkills from "@/components/blocks/MySkills";
+import TextReveal from "@/utils/TextReveal/TextReveal";
 
 export default function Home() {
   const ref = useRef(null);
@@ -50,10 +51,18 @@ export default function Home() {
       <div className="min-h-screen bg-[#000001] relative overflow-hidden">
         <div className="bokhe-gradient-main absolute bottom-[-10%] left-0 z-[0] w-[100%] opacity-55"></div>
         <div className="flex gap-4 px-24 py-16 flex-col">
-          <h2 className="text-white/55 text-[4rem] leading-2">
-            Experience <br />
-            <span className="text-[3rem] ">History</span>
-          </h2>
+          <div className="flex flex-col gap-0">
+            <div className=" overflow-hidden ">
+              <TextReveal className="myCustomClass p-0 text-white/50 text-[3rem]  ">
+                Experience
+              </TextReveal>
+            </div>
+            <div className=" overflow-hidden ">
+              <TextReveal className="myCustomClass text-white text-[3rem]  ">
+                History
+              </TextReveal>
+            </div>
+          </div>
           <ExperienceCard experience={experience1}></ExperienceCard>
           <ExperienceCard experience={experience3}></ExperienceCard>
           <ExperienceCard experience={experience2}></ExperienceCard>
