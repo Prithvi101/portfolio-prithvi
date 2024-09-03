@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  font-size: clamp(1rem, 2vw, 2rem);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,5 +30,20 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .hero-heading {
+    @apply font-extrabold text-h1;
+  }
+  .sub-tittle {
+    @apply text-h3 font-bold;
+  }
+  .hero-point {
+    @apply font-normal text-p text-[#fff]   flex items-center gap-1;
+  }
+  .point {
+    @apply text-blue-600 bg-white rounded-2xl px-2 cursor-pointer;
   }
 }
