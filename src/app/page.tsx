@@ -1,4 +1,4 @@
-import Hero from "@/components/blocks/Hero";
+import Hero from "@/components/blocks/Hero/Hero";
 import Partcles from "@/components/ui/Partcles";
 import Image from "next/image";
 

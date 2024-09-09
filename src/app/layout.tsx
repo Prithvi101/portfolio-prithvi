@@ -2,6 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import LenisScroller from "@/components/util/LenisScroller";
+import NavBar from "@/components/ui/NavBar";
+import { Lato } from "@next/font/google";
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400", "700", "900"], // Choose weights you need
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={lato.className}>
+        {children}
+        <NavBar></NavBar>
+      </body>
       <LenisScroller></LenisScroller>
     </html>
   );
