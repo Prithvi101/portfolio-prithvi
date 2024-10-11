@@ -15,7 +15,7 @@ const config: Config = {
       },
       colors: {
         textPrimary: "#92DCE5",
-        textDisabled: "#dadada",
+        textDisabled: "#BABBBD",
         textLight: "#EEE5E9",
         bgMain: "#000",
 
