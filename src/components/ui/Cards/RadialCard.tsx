@@ -20,6 +20,7 @@ function RadialCard({
       <div className="card flex justify-center  items-center text-[2.5rem] aspect-[2/2] rounded-xl">
         {image ? (
           <Image
+            alt=" card"
             src={image}
             width={200}
             height={200}

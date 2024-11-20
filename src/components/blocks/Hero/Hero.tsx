@@ -9,35 +9,38 @@ import Title from "./Title";
 import Preloader from "../Preloader/Preloader";
 
 function Hero() {
-  const conatinerRef = useRef<HTMLDivElement>();
-  const innerContainer = useRef<HTMLDivElement>();
-  const fakeContainer = useRef<HTMLDivElement>();
+  const conatinerRef = useRef<HTMLDivElement>(null);
+  const innerContainer = useRef<HTMLDivElement>(null);
+  const fakeContainer = useRef<HTMLDivElement>(null);
   const { contextSafe } = useGSAP({ scope: conatinerRef });
   const [preload, setPreload] = useState<Boolean>(false);
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    // Scale Content
-    gsap.to(innerContainer?.current, {
-      scale: 0.8,
-      scrollTrigger: {
-        trigger: fakeContainer.current,
-        scrub: true,
-        start: "top top",
-        end: "bottom top",
-      },
-    });
-    // Container Animation
-    gsap.to(conatinerRef.current, {
-      scrollTrigger: {
-        trigger: conatinerRef.current,
-        pin: true,
-        toggleActions: "restart pause resume reverse",
-        start: "top top",
-        end: "bottom top",
-        pinSpacing: false,
-      },
-    });
+    if (typeof innerContainer?.current !== "undefined") {
+      // Scale Content
+      gsap.to(innerContainer?.current, {
+        scale: 0.8,
+        scrollTrigger: {
+          trigger: fakeContainer.current,
+          scrub: true,
+          start: "top top",
+          end: "bottom top",
+        },
+      });
+    }
+    if (typeof conatinerRef?.current != "undefined") {
+      // Container Animation
+      gsap.to(conatinerRef.current, {
+        scrollTrigger: {
+          trigger: conatinerRef.current,
+          pin: true,
+          toggleActions: "restart pause resume reverse",
+          start: "top top",
+          end: "bottom top",
+          pinSpacing: false,
+        },
+      });
+    }
   });
   return (
     <>

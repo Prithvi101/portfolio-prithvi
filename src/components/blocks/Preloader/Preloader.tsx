@@ -5,7 +5,7 @@ import styles from "./preloader.module.scss";
 import CubeGrid from "./CubeGrid";
 
 function Preloader({ handleOnComplete }: { handleOnComplete: Function }) {
-  const container = useRef();
+  const container = useRef(null);
   useGSAP(
     () => {
       if (container.current) {
@@ -25,7 +25,7 @@ function Preloader({ handleOnComplete }: { handleOnComplete: Function }) {
     <div className="overflow-hidden w-full h-full fixed top-0 left-0  z-[100]">
       <div
         ref={container}
-        className="fixed flex-col z-[100] top-0 left-0 w-full h-full bg-[#150323]  overflow-hidden flex items-center justify-center"
+        className="fixed flex-col z-[100] top-0 left-0 w-full h-full bg-[#060311]  overflow-hidden flex items-center justify-center"
       >
         <CubeGrid></CubeGrid>
         <h1 className="mt-10">Loading.....</h1>

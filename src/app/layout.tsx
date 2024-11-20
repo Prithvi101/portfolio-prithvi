@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google"; // Import Roboto font
 import "./globals.css";
 import LenisScroller from "@/components/util/LenisScroller";
 import NavBar from "@/components/ui/NavBar";
-import { Lato } from "@next/font/google";
 
-const lato = Lato({
+const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "700", "900"], // Choose weights you need
 });
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Prithvi Portfolio",
@@ -28,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lato.className}>
+      <body className={roboto.className}>
+        {" "}
+        {/* Apply Roboto font */}
         {children}
         <NavBar></NavBar>
       </body>

@@ -21,6 +21,7 @@ function Background() {
         className="z-[-1]  absolute bottom-[30%] right-[-30%]"
       ></Image>
       <Image
+        alt="background"
         src={"/grid.svg"}
         width={1440}
         height={720}

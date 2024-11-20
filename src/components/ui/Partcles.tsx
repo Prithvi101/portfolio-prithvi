@@ -18,8 +18,7 @@ function Partcles() {
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
 
-    // Append renderer's DOM element to the sceneRef
-    if (sceneRef != null) sceneRef?.current.appendChild(renderer.domElement);
+    (sceneRef?.current ?? document.body).appendChild(renderer.domElement);
 
     // Set transparent background
     renderer.setClearAlpha(0);
