@@ -7,16 +7,24 @@ function Background() {
   return (
     <div className={"w-[100vw] h-[100vh] z-[-1] relative"}>
       <Image
-        src={"/blob.svg"}
+        src={"/skills-bokhe.svg"}
         width={1440}
         height={720}
-        className="z-[-1] w-[100vw] h-[100vh]  absolute top-0 left-0 object-cover opacity-80"
+        alt="bokhe"
+        className="z-[-1]  absolute top-[30%] left-[-30%]"
+      ></Image>
+      <Image
+        src={"/skills-bokhe.svg"}
+        width={1440}
+        height={720}
+        alt="bokhe"
+        className="z-[-1]  absolute bottom-[30%] right-[-30%]"
       ></Image>
       <Image
         src={"/grid.svg"}
         width={1440}
         height={720}
-        className="z-[-2] w-[100vw] h-[100vh]  absolute top-0 left-0 object-cover opacity-50"
+        className="z-[-2] w-[100vw] h-[100vh]  absolute top-0 left-0 object-cover opacity-20"
       ></Image>
       <Partcles></Partcles>
     </div>
