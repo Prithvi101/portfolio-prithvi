@@ -1,10 +1,10 @@
 const nextConfig = {
-  basePath: "/2048-in-react",
+  basePath: "/portfolio-prithvi",
 
   output: "export",
   images: {
     loader: "akamai",
-    path: "/portfolio-prithvi",
+    path: "",
   },
 };
 
