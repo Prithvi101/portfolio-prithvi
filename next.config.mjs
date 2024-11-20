@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/portfolio-prithvi",
   images: {
     dangerouslyAllowSVG: true,
     contentDispositionType: "attachment",
