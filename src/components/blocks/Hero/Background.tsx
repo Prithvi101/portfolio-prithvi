@@ -2,12 +2,13 @@ import Blobs from "@/components/ui/Blobs/Blobs";
 import Partcles from "@/components/ui/Partcles";
 import Image from "next/image";
 import React from "react";
+import { prefix } from "../../../../prefix";
 
 function Background() {
   return (
     <div className={"w-[100vw] h-[100vh] z-[-1] relative"}>
       <Image
-        src={"/skills-bokhe.svg"}
+        src={`${prefix}/skills-bokhe.svg`}
         width={1440}
         height={720}
         alt="bokhe"
