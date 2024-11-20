@@ -1,12 +1,10 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/portfolio-prithvi",
-  assetPrefix: "/portfolio-prithvi/", // Ensures static assets like images load correctly
-  output: "export", // This enables static export
+  output: "export",
   images: {
     loader: "akamai",
-    path: "", // Ensures paths are relative
+    path: "",
   },
+  assetPrefix: "./",
 };
 
 export default nextConfig;
