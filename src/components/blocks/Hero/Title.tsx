@@ -13,7 +13,7 @@ function Title() {
         </TextReveal>
         <ImageReveal className=" sm:h-12 sm:w-28 h-16 w-48 overflow-hidden rounded-full flex items-center   relative">
           <Image
-            src={"/hero-image.png"}
+            src={"./hero-image.png"}
             width={800}
             height={200}
             alt="blob"

@@ -26,7 +26,7 @@ function ResumeCard() {
         </p>
       </div>
       <Image
-        src={"/code-snippet.svg"}
+        src={"./code-snippet.svg"}
         width={980}
         height={600}
         alt="bokhe"

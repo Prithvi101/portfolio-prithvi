@@ -15,7 +15,7 @@ function Background() {
         className="z-[-1]  absolute top-[30%] left-[-30%]"
       ></Image>
       <Image
-        src={"/skills-bokhe.svg"}
+        src={"./skills-bokhe.svg"}
         width={1440}
         height={720}
         alt="bokhe"
@@ -23,7 +23,7 @@ function Background() {
       ></Image>
       <Image
         alt="background"
-        src={"/grid.svg"}
+        src={"./grid.svg"}
         width={1440}
         height={720}
         className="z-[-2] w-[100vw] h-[100vh]  absolute top-0 left-0 object-cover opacity-20"
