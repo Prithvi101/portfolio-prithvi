@@ -2,11 +2,10 @@
 const nextConfig = {
   basePath: "/portfolio-prithvi",
   assetPrefix: "/portfolio-prithvi/", // Ensures static assets like images load correctly
-
+  output: "export", // This enables static export
   images: {
-    dangerouslyAllowSVG: true,
-    contentDispositionType: "attachment",
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    loader: "akamai",
+    path: "", // Ensures paths are relative
   },
 };
 
