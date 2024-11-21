@@ -9,10 +9,12 @@ export default function TextReveal({
   className,
   children,
   slide,
+  fast,
 }: {
   className?: string;
   children: string | ReactNode;
   slide?: boolean;
+  fast?: boolean;
 }) {
   const textRef = useRef<HTMLParagraphElement>(null);
   useGSAP(
@@ -26,7 +28,7 @@ export default function TextReveal({
             toggleActions: "restart pause resume reverse",
             start: "top 90%",
           },
-          duration: 1,
+          duration: fast ? 0.4 : 1,
           autoAlpha: 0,
           y: slide ? 120 : 0,
           ease: "power1.out",

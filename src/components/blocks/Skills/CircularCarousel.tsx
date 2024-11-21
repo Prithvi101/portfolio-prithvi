@@ -139,7 +139,7 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({
           height: responsivePathRadius * 2,
           borderRadius: "50%",
           position: "absolute",
-          zIndex: 1000,
+          zIndex: 30,
         }}
         drag
         dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
@@ -151,6 +151,18 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({
           className="p-4  absolute top-10 left-0 right-0 m-auto w-5"
         ></div>
       </motion.div>
+      <motion.div
+        style={{
+          width: responsivePathRadius * 1.2,
+          height: responsivePathRadius * 1.2,
+          borderRadius: "50%",
+          position: "absolute",
+          top: 0,
+          bottom: 0,
+          margin: "auto",
+          zIndex: 100,
+        }}
+      ></motion.div>
       <motion.div
         style={{
           width: responsivePathRadius / 2,
@@ -187,9 +199,9 @@ const CircularCarousel: React.FC<CircularCarouselProps> = ({
           </div>
         ))}
       </motion.div>
-      <div className="absolute top-[-50%]  text-center">
+      <div className="absolute top-[-50%] z-50   text-center">
         {!dragging && (
-          <TextReveal slide>
+          <TextReveal slide fast>
             <h2 className="text-white font-bold">
               {items[activeIndex]?.title}
             </h2>
