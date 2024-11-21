@@ -10,7 +10,7 @@ function NavHoverButton({
   return (
     <button
       className={
-        "relative overflow-hidden text-white  px-4 py-1  group-hover:text-white rounded-full text-[.65rem] transition-colors duration-300 delay-500 group"
+        "relative overflow-hidden text-white  sm:px-4 px-2 py-1  group-hover:text-white rounded-full sm:text-[.65rem] text-[1rem] transition-colors duration-300 delay-500 group"
       }
       onClick={onClick}
     >

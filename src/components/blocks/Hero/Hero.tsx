@@ -47,7 +47,7 @@ function Hero() {
       {!preload && (
         <Preloader handleOnComplete={() => setPreload(true)}></Preloader>
       )}
-      <section className=" max-w-6xl  sm:px-auto">
+      <section className=" max-w-6xl  sm:px-auto overflow-hidden">
         <div ref={conatinerRef}>
           {/* container */}
           <div
