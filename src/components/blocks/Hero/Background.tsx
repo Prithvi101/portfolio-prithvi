@@ -11,21 +11,24 @@ function Background() {
         src={`${prefix}/skills-bokhe.svg`}
         width={1440}
         height={720}
+        priority={true}
         alt="bokhe"
         className="z-[-1]  absolute top-[30%] left-[-30%]"
       ></Image>
       <Image
-        src={"/skills-bokhe.svg"}
+        alt="bokhe"
+        src="/skills-bokhe.svg"
         width={1440}
         height={720}
-        alt="bokhe"
-        className="z-[-1]  absolute bottom-[30%] right-[-30%]"
-      ></Image>
+        className="z-[-1] absolute bottom-[30%] right-[-30%]"
+        priority={true}
+      />
       <Image
         alt="background"
         src={"/grid.svg"}
         width={1440}
         height={720}
+        priority={true}
         className="z-[-2] w-[100vw] h-[100vh]  absolute top-0 left-0 object-cover opacity-20"
       ></Image>
       <Partcles></Partcles>
