@@ -1,11 +1,2 @@
-const nextConfig = {
-  basePath: "/portfolio-prithvi",
-
-  output: "export",
-  images: {
-    loader: "akamai",
-    path: ".",
-  },
-};
-
+const nextConfig = {};
 export default nextConfig;
