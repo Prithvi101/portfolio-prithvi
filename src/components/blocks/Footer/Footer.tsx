@@ -1,3 +1,4 @@
+"use client";
 import FooterCard from "@/components/ui/Cards/FooterCard";
 import PageTitle from "@/components/ui/PageTitle";
 import React from "react";
@@ -6,6 +7,12 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
 
 function Footer() {
+  const handleScroll = (targetId: string) => {
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <div
@@ -44,12 +51,14 @@ function Footer() {
         <div className="flex gap-10 mt-10">
           <div className="flex flex-col gap-8">
             <FooterCard
+              onClick={() => handleScroll("skills")}
               title={"Skills"}
               subTitle={
                 "Check out the things I'm good at, from building websites to Mobile apps"
               }
             ></FooterCard>
             <FooterCard
+              onClick={() => handleScroll("skills")}
               title={"Projects"}
               subTitle={
                 "Check out the things I'm good at, from building websites to Mobile apps"
@@ -59,12 +68,14 @@ function Footer() {
           <div className="flex flex-col gap-8">
             <FooterCard
               title={"Experience"}
+              onClick={() => handleScroll("experience")}
               subTitle={
                 "Check out the things I'm good at, from building websites to Mobile apps"
               }
             ></FooterCard>{" "}
             <FooterCard
               title={"Resume"}
+              onClick={() => handleScroll("resume")}
               subTitle={
                 "Check out the things I'm good at, from building websites to Mobile apps"
               }
