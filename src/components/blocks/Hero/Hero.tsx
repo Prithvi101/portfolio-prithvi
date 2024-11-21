@@ -60,11 +60,11 @@ function Hero() {
               </div>
               <div className=" self-center">
                 <TextReveal>
-                  <h4 className="sub-tittle ">
+                  <h2 className="sub-tittle ">
                     {
                       "A self-taught developer with an interest in Computer Science."
                     }
-                  </h4>
+                  </h2>
                 </TextReveal>
               </div>
               <div className="mt-10 flex flex-col justify-center items-center">

@@ -32,6 +32,7 @@ function Resume() {
         <a
           href="https://www.instagram.com/prithvi__101/"
           target="_blank"
+          aria-label="linkedin"
           rel="noopener noreferrer"
           className="hover:text-yellow-300 cursor-pointer hover:scale-125 transition-all duration-500"
         >
@@ -40,6 +41,7 @@ function Resume() {
         <a
           href="https://github.com/Prithvi101"
           target="_blank"
+          aria-label="github"
           rel="noopener noreferrer"
           className="hover:text-yellow-300 cursor-pointer hover:scale-125 transition-all duration-500"
         >

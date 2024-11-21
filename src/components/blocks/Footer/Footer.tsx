@@ -22,25 +22,33 @@ function Footer() {
         <div className="mt-10">
           <PageTitle line1="Let's" line2="Connect"></PageTitle>
           <div className="flex justify-evenly mt-10">
+            {/* GitHub Link */}
             <a
               href="https://github.com/Prithvi101"
               target="_blank"
+              aria-label="GitHub profile"
               rel="noopener noreferrer"
               className="hover:text-yellow-300 cursor-pointer hover:scale-125 transition-all duration-500"
             >
               <FaGithub />
             </a>
+
+            {/* Instagram Link */}
             <a
               href="https://www.instagram.com/prithvi__101/"
               target="_blank"
+              aria-label="Instagram profile"
               rel="noopener noreferrer"
               className="hover:text-yellow-300 cursor-pointer hover:scale-125 transition-all duration-500"
             >
               <RiInstagramFill />
             </a>
+
+            {/* LinkedIn Link */}
             <a
               href="https://www.linkedin.com/in/pruthvik101/"
               target="_blank"
+              aria-label="LinkedIn profile"
               rel="noopener noreferrer"
               className="hover:text-yellow-300 cursor-pointer hover:scale-125 transition-all duration-500"
             >
