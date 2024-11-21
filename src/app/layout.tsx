@@ -3,7 +3,6 @@ import { Roboto } from "next/font/google"; // Import Roboto font
 import "./globals.css";
 import LenisScroller from "@/components/util/LenisScroller";
 import NavBar from "@/components/ui/NavBar";
-
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "700", "900"], // Choose weights you need
