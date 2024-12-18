@@ -6,7 +6,7 @@ import Skills from "@/components/blocks/Skills/Skills";
 
 export default function Home() {
   return (
-    <main className=" ">
+    <main className=" text-[#fff]">
       <Hero></Hero>
       <Skills></Skills>
       <Experience></Experience>

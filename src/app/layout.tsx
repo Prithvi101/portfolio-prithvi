@@ -29,6 +29,7 @@ export default function RootLayout({
         {/* Apply Roboto font */}
         {children}
         <NavBar></NavBar>
+        <div className="bg-black fixed w-[100vw] h-[100vh] z-[-50] top-0"></div>
       </body>
       <LenisScroller></LenisScroller>
     </html>

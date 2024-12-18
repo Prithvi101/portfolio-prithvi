@@ -47,11 +47,11 @@ function Hero() {
       {!preload && (
         <Preloader handleOnComplete={() => setPreload(true)}></Preloader>
       )}
-      <section className=" max-w-6xl  sm:px-auto overflow-hidden">
-        <div ref={conatinerRef}>
+      <section className=" w-full  sm:px-auto overflow-hidden">
+        <div ref={conatinerRef} className="w-[100vw] ">
           {/* container */}
           <div
-            className="flex flex-col justify-center items-center "
+            className="flex flex-col justify-center items-center w-full"
             ref={innerContainer}
           >
             <div className="min-h-[100dvh] relative flex flex-col  sm:text-left  text-center justify-center  items-center  ">
@@ -67,7 +67,7 @@ function Hero() {
                   </h2>
                 </TextReveal>
               </div>
-              <div className="mt-10 flex flex-col justify-center items-center">
+              <div className="mt-10 flex flex-col justify-center items-center text-[#fff]">
                 <p className=" ::span:bg-yellow">
                   Currently specializing in{" "}
                   <span className="pill1">Frontend</span> and
