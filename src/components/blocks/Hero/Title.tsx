@@ -5,7 +5,7 @@ import React from "react";
 
 function Title() {
   return (
-    <div className="flex flex-col justify-center leading-[4rem]">
+    <div className="flex flex-col justify-center leading-[4rem] gap-4 sm:gap-0">
       {/* Line One */}
       <div className="flex items-center justify-center gap-3 sm:flex-row flex-col">
         <TextReveal slide>

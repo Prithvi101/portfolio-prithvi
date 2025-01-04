@@ -63,7 +63,7 @@ function Hero() {
             className="flex flex-col justify-start items-center  w-full"
             ref={innerContainer}
           >
-            <div className="min-h-[100dvh] relative flex flex-col   sm:text-left  text-center justify-start  items-center  ">
+            <div className="min-h-[100dvh] relative flex flex-col px-8 sm:px-auto  sm:text-left  text-center justify-start  items-center  ">
               <div className="">
                 <Title></Title>
               </div>

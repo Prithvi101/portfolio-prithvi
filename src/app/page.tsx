@@ -7,7 +7,7 @@ import AnimatedCursor from "react-animated-cursor";
 
 export default function Home() {
   return (
-    <main className=" text-[#fff]">
+    <main className=" text-[#fff] ">
       <AnimatedCursor
         innerSize={8}
         outerSize={50}
