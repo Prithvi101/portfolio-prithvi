@@ -50,17 +50,26 @@ function Hero() {
       <section className=" w-full  sm:px-auto overflow-hidden">
         <div ref={conatinerRef} className="w-[100vw] ">
           {/* container */}
+          <div className="   h-[20%] justify-end  flex items-center px-8  text-[0.4rem] text-white/75 font-extralight ">
+            <div className="flex gap-2 border-[1px] border-white/50 px-2 py-1 rounded-full">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-700"></span>
+              </span>
+              <p className="link">OPEN TO WORK</p>
+            </div>
+          </div>
           <div
-            className="flex flex-col justify-center items-center w-full"
+            className="flex flex-col justify-start items-center  w-full"
             ref={innerContainer}
           >
-            <div className="min-h-[100dvh] relative flex flex-col  sm:text-left  text-center justify-center  items-center  ">
+            <div className="min-h-[100dvh] relative flex flex-col   sm:text-left  text-center justify-start  items-center  ">
               <div className="">
                 <Title></Title>
               </div>
               <div className=" self-center">
                 <TextReveal>
-                  <h2 className="sub-tittle ">
+                  <h2 className="sub-tittle link ">
                     {
                       "A self-taught developer with an interest in Computer Science."
                     }
@@ -70,8 +79,8 @@ function Hero() {
               <div className="mt-10 flex flex-col justify-center items-center text-[#fff]">
                 <p className=" ::span:bg-yellow">
                   Currently specializing in{" "}
-                  <span className="pill1">Frontend</span> and
-                  <span className="pill2">Mobile</span>
+                  <span className="pill1 link">Frontend</span> and
+                  <span className="pill2 link">Mobile</span>
                 </p>
                 <a href="http://www.bexcard.co.uk" target="_blank">
                   <p className="">SDE-I at bexcard.co.uk</p>

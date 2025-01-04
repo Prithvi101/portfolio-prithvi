@@ -30,7 +30,7 @@ function Resume() {
       {/* Social */}
       <div className="flex text-[.75rem] gap-4 mt-4 text-white/60">
         <a
-          href="https://www.instagram.com/prithvi__101/"
+          href="https://www.linkedin.com/in/pruthvik101/"
           target="_blank"
           aria-label="linkedin"
           rel="noopener noreferrer"
