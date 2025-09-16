@@ -9,9 +9,7 @@ export default function LenisScroller() {
     const lenisScroll = new Lenis({
       //wheelMultiplier: 0.8
       wheelMultiplier: 1.3,
-      smoothWheel: true,
       autoResize: true,
-      duration: 2,
     });
 
     function raf(time: any) {

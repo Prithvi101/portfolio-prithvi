@@ -92,9 +92,9 @@ function Footer() {
         </div>
       </div>
       <div className="flex justify-center flex-col items-center pb-20 text-white/45 text-[.75rem]">
-        <p>© 2024 Prithvi Thakkar</p>
+        <p>© 2025 Prithvi Thakkar</p>
         <p className="text-[.65rem] mt-2">
-          Powered by Next.js, Framer motion and GitHub.
+          Powered by Next.js, Framer motion and Vercel.
         </p>
       </div>
     </>

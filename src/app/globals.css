@@ -11,6 +11,16 @@
   color: #fff;
 }
 
+::selection {
+  background-color: #eab308; /* Highlight color */
+  color: black; /* Text color */
+}
+
+::-moz-selection {
+  background-color: #eab308;
+  color: black;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
