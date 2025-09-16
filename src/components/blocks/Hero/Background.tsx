@@ -6,7 +6,7 @@ import { prefix } from "../../../../prefix";
 
 function Background() {
   return (
-    <div className={"w-[100vw] h-[100vh] z-[-1] relative"}>
+    <div className={"w-[100vw] h-[100vh] z-[-1] relative bg-[#080808]"}>
       <Image
         src={`${prefix}/skills-bokhe.svg`}
         width={1440}

@@ -5,7 +5,7 @@ import LenisScroller from "@/components/util/LenisScroller";
 import NavBar from "@/components/ui/NavBar";
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "700", "900"], // Choose weights you need
+  weight: ["100", "300", "400", "700", "900"], // Choose weights you need
 });
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default function RootLayout({
         {/* Apply Roboto font */}
         {children}
         <NavBar></NavBar>
-        <div className="bg-black fixed w-[100vw] h-[100vh] z-[-50] top-0"></div>
+        <div className="bg-[#080808] fixed w-[100vw] h-[100vh] z-[-50] top-0"></div>
       </body>
       <LenisScroller></LenisScroller>
     </html>

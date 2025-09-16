@@ -10,7 +10,7 @@ function Skills() {
   return (
     <div
       id="skills"
-      className="w-full h-[100vh] sm:min-h-[720px] min-h-[900px] bg-[#000] overflow-hidden z-50 relative p-9 flex flex-col justify-end pb-0"
+      className="w-full h-[100vh] sm:min-h-[720px] min-h-[900px] bg-[#080808] overflow-hidden z-50 relative p-9 flex flex-col justify-end pb-0"
     >
       <div>
         <Background />

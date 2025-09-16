@@ -3,23 +3,19 @@ import React, { MouseEventHandler } from "react";
 function NavHoverButton({
   text,
   onClick,
+  onMouseEnter,
 }: {
   text: string;
   onClick?: MouseEventHandler<HTMLButtonElement>;
+  onMouseEnter?: MouseEventHandler<HTMLButtonElement>;
 }) {
   return (
     <button
-      className={
-        "relative overflow-hidden text-white  sm:px-4 px-2 py-1  group-hover:text-white rounded-full sm:text-[.65rem] text-[1rem] transition-colors duration-300 delay-500 group"
-      }
+      className="relative z-10 sm:px-4 px-2 py-1 text-white hover:text-black rounded-full sm:text-[.65rem] text-[1rem] transition-colors duration-300"
       onClick={onClick}
+      onMouseEnter={onMouseEnter}
     >
-      <span className="relative z-10 group-hover:text-black">{text}</span>
-      <div
-        className={
-          "absolute inset-0 bg-[#ffd500] -translate-x-full group-hover:translate-x-0 group-hover:scale-150 transition-transform duration-300 rounded-full aspect-square w-[100%]"
-        }
-      ></div>
+      {text}
     </button>
   );
 }

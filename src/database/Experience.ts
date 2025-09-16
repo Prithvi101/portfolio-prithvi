@@ -1,7 +1,14 @@
 export const Experiences = [
   {
-    name: "Bex Money ",
+    name: "Level2 ",
     role: "Front-End Developer",
+    duration: "Feb 2025 - Present ",
+    mode: "Remote",
+    location: "London, United Kingdom",
+  },
+  {
+    name: "Bex Money ",
+    role: "Fullstack Developer",
     duration: "August 2023 - Dec 2024 ",
     mode: "Remote",
     location: "London, United Kingdom",
