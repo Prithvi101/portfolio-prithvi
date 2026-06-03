@@ -10,7 +10,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "Prithvi Portfolio",
-  description: `I am Pruthvik, a frontend developer with over 2 year of professional
+  description: `I am Pruthvik, a frontend developer with over 3.5+ year of professional
           experience. Successfully building user-friendly websites with ReactJS
           & NextJS. I pay attention to small details, enjoy technical problems,
           and work well in teams. I like learning new technologies and always
